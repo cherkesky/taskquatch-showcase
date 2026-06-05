@@ -4,175 +4,29 @@
 
 **Neighbors Helping Neighbors**
 
-Taskquatch is a hyperlocal marketplace connecting neighbors with trusted local providers. This repository is the public GitHub entry point for the Taskquatch product showcase: product story, marketplace outcomes, architecture, operations, trust and safety, screenshots, and technical highlights.
+Taskquatch is a hyperlocal marketplace connecting neighbors with trusted local providers. This repository is a public portfolio entry point for the product, architecture, operations, trust and safety, and marketplace outcomes behind Taskquatch.
+
+## View The Showcase
+
+The complete showcase is hosted on GitHub Pages:
+
+**[cherkesky.github.io/taskquatch-showcase](https://cherkesky.github.io/taskquatch-showcase/)**
+
+The live showcase includes:
+
+- Product overview and marketplace metrics
+- Public-safe screenshot gallery
+- Simplified architecture diagram
+- Trust and safety / identity verification workflow
+- Marketplace operations, support, and Slack-based alerting
+- Reliability, automation, realtime updates, and queue-backed workflows
+- Payments and payouts workflow
+- Growth systems and admin tooling
+- Case study, technical highlights, and learnings
+
+GitHub READMEs do not support embedding the live site in an iframe, so this README intentionally stays lightweight and points to the published showcase as the source of truth.
 
 Visit the live product: [taskquatch.app](https://taskquatch.app)
-
-## Complete Showcase
-
-This README is the primary showcase experience for GitHub visitors. It contains the full public-facing story: product overview, marketplace metrics, screenshots, architecture, trust and safety, operations, reliability, payments, growth systems, admin tooling, challenges, and builder context.
-
-This repository is intentionally a showcase, not a source-code mirror. It does not expose production application code, private backend implementation details, secrets, credentials, customer data, vendor data, payment records, or internal operational payloads.
-
-## Marketplace Snapshot
-
-- **5,000+ users**
-- **500+ vendors**
-- **100+ daily active users**
-- **7 cities**
-
-## Product Preview
-
-The gallery uses public-safe mockups plus sanitized simulator captures. Screenshots are selected or edited to avoid exposing real user, vendor, payment, or operational data.
-
-<img src="screenshots/home.svg" alt="Home mockup" width="360" />
-
-<img src="screenshots/create-task.png" alt="Create Task capture" width="360" />
-
-<img src="screenshots/tasks-tab.svg" alt="Tasks Tab mockup" width="360" />
-
-<img src="screenshots/messaging.png" alt="Messaging sanitized capture" width="360" />
-
-<img src="screenshots/vendor-dashboard.svg" alt="Vendor Dashboard mockup" width="360" />
-
-<img src="screenshots/admin-dashboard.svg" alt="Admin Dashboard mockup" width="360" />
-
-## What Taskquatch Does
-
-Taskquatch brings together the major workflows needed to run a local services marketplace:
-
-- **Task posting:** Neighbors describe what they need and publish local jobs.
-- **Matching:** Relevant providers discover work based on service fit, location, and availability.
-- **Payments:** Customers and providers move through a clear marketplace payment flow.
-- **Vendor onboarding:** Providers create profiles, define services, and complete readiness steps.
-- **Trust and safety:** Reviews, reports, verification, moderation, and provider context help protect marketplace quality.
-- **Operations tooling:** Internal workflows support marketplace oversight, support, payouts, health checks, and growth operations.
-
-The core user experience is intentionally simple: a neighbor posts a task, reviews relevant local providers, communicates through the product, and pays securely after the work is complete. The provider side supports task discovery, appointments, earnings visibility, and operational readiness. Public-facing marketplace cues include provider ratings, nearby availability, fixed-price services, and Stripe-powered payments.
-
-## Case Study
-
-**Problem:** Neighbors often need small local jobs completed quickly, while capable local providers need better access to nearby demand.
-
-**Solution:** Taskquatch connects customers and providers through task posting, matching, messaging, payments, identity verification, support tooling, and marketplace operations workflows.
-
-**Outcome:** The product grew into a multi-city marketplace with thousands of users, hundreds of vendors, and daily marketplace activity.
-
-## Architecture
-
-The architecture below is intentionally high level. It communicates the system shape without exposing proprietary implementation details.
-
-![Simplified Taskquatch Architecture](assets/architecture.svg)
-
-- **React Native:** Mobile-first customer and vendor experiences.
-- **Web surfaces:** Static hosting and CDN-backed marketing or operational surfaces.
-- **API Gateway:** REST and WebSocket entry points for app traffic.
-- **AWS Lambda:** Serverless marketplace APIs, payments, notifications, and operations workflows.
-- **PostgreSQL:** Relational marketplace records, task state, users, and operational data.
-- **Redis:** Caching for performance-sensitive app workflows.
-- **SQS + DLQs:** Queue-backed background jobs and failure handling.
-- **S3:** Public assets and file-oriented workflows.
-- **DynamoDB:** Realtime WebSocket connection state.
-- **External providers:** Stripe, live support chat, email/SMS, push notifications, maps, and verification integrations.
-- **Terraform:** Infrastructure provisioning for AWS resources, domains, and permissions.
-
-## Trust & Safety
-
-Identity verification is part of the vendor onboarding and marketplace safety story. The public workflow is:
-
-`Vendor Onboarding -> Secure Upload -> Protected Storage -> Verification Provider -> Operations Review -> Marketplace Access`
-
-This public repo intentionally excludes provider payloads, exact routes, webhook details, storage paths, secret names, and proprietary review logic.
-
-The goal is to make provider onboarding safer without turning the public showcase into documentation for private review rules. At a high level, vendors provide eligibility information, upload required documents through controlled flows, verification status returns to the platform, and operations workflows support review, exceptions, and marketplace access decisions.
-
-## Marketplace Operations
-
-Taskquatch includes operational systems for running a two-sided marketplace:
-
-- Vendor approvals and onboarding review
-- Task lifecycle visibility across creation, matching, completion, cancellation, and follow-up states
-- Customer support workflows
-- Payout oversight and reconciliation support
-- Content moderation and reporting
-- Health/status visibility for key marketplace flows and incident diagnosis
-
-Taskquatch also includes support and alerting integrations such as live support chat and Slack-based operational notifications, helping shorten response times for customer issues, vendor workflows, and reliability events.
-
-## Reliability & Automation
-
-The platform uses background automation to keep marketplace activity moving:
-
-- Queue-backed workflows with dead-letter handling
-- Scheduled jobs for reminders, recurring tasks, and maintenance workflows
-- Health checks for important API surfaces
-- Error reporting for production awareness
-- Notification processors for customer and provider communication
-
-## Realtime Updates
-
-Task status changes can reach the mobile app without waiting for manual refreshes. The realtime layer is described publicly at a capability level only:
-
-- WebSocket entry point for realtime app traffic
-- Task status publishing from backend workflows
-- Connection state tracking for active clients
-- Mobile fallback behavior so core task flows remain usable if realtime delivery is unavailable
-
-## Payments & Payouts
-
-The public payment workflow is intentionally outcome-focused:
-
-`Task Completed -> Payment Captured -> Platform Fee Applied -> Vendor Payout -> Reconciliation`
-
-Customers need confidence at checkout, providers need transparent payout expectations, and operations needs visibility into exceptions. This avoids Stripe implementation details, payment identifiers, internal exceptions, and financial records.
-
-## Growth Systems
-
-Taskquatch combines product and growth infrastructure to support local marketplace expansion:
-
-- Referral flows
-- Coupons and promotional incentives
-- Marketing landing pages
-- Lifecycle email and push messaging
-- Local service and category content
-
-## Admin Tooling
-
-The showcase references broad internal tooling categories without exposing private dashboards or operational records:
-
-- User support
-- Vendor review
-- Task monitoring
-- Content reports
-- Payout oversight
-- Health checks
-- Marketing operations
-- Data export support
-
-The sanitized admin concept in this showcase represents an operations console with aggregate marketplace views such as open reviews, watched tasks, healthy systems, vendor review, task monitoring, and support queues. It is intentionally not a real private admin screenshot.
-
-## Technical Highlights
-
-- React Native
-- Node.js
-- AWS
-- Terraform
-- Stripe
-- Docker
-- PostgreSQL
-- SQS
-- Redis
-- DynamoDB
-- S3 / CloudFront
-
-## Challenges & Learnings
-
-Building and operating Taskquatch required solving both product and marketplace problems:
-
-- **Marketplace cold start:** Each side of the marketplace needed enough value before density was guaranteed.
-- **Supply-demand balancing:** Provider availability, local demand, service categories, and geography required constant feedback loops.
-- **Reliability:** Task flows, notifications, payments, verification, and admin workflows needed dependable background processing.
-- **Fast iteration:** Product decisions were shaped by real user behavior, operational needs, and marketplace quality signals.
 
 ## Repository Structure
 
@@ -192,7 +46,7 @@ taskquatch-showcase/
 
 ## Public Scope
 
-This repository intentionally excludes:
+This repository is intentionally a showcase, not a source-code mirror. It excludes:
 
 - Production application source code
 - Backend implementation details
