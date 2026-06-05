@@ -1,0 +1,18 @@
+<svg width="900" height="675" viewBox="0 0 900 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Admin Dashboard screen placeholder</title>
+  <rect width="900" height="675" rx="32" fill="#F3F7FB"/>
+  <rect x="74" y="70" width="752" height="536" rx="34" fill="#FFFFFF" stroke="#DDE8F5"/>
+  <rect x="112" y="108" width="180" height="498" rx="28" fill="#102033"/>
+  <rect x="144" y="154" width="92" height="14" rx="7" fill="#FFFFFF" opacity="0.82"/>
+  <rect x="144" y="210" width="112" height="12" rx="6" fill="#FFFFFF" opacity="0.45"/>
+  <rect x="144" y="252" width="92" height="12" rx="6" fill="#FFFFFF" opacity="0.45"/>
+  <rect x="334" y="112" width="260" height="24" rx="12" fill="#102033"/>
+  <rect x="334" y="174" width="198" height="110" rx="22" fill="#E8FBF6"/>
+  <rect x="560" y="174" width="198" height="110" rx="22" fill="#EDF5FF"/>
+  <rect x="334" y="326" width="424" height="212" rx="26" fill="#F7FAFE" stroke="#DDE8F5"/>
+  <rect x="366" y="366" width="328" height="16" rx="8" fill="#102033"/>
+  <rect x="366" y="416" width="346" height="12" rx="6" fill="#A8B7CA"/>
+  <rect x="366" y="454" width="306" height="12" rx="6" fill="#C9D6E4"/>
+  <rect x="366" y="492" width="326" height="12" rx="6" fill="#A8B7CA"/>
+  <text x="450" y="636" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#102033">Admin Dashboard</text>
+</svg>

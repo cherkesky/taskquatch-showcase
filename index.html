@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Taskquatch showcase: a hyperlocal marketplace connecting neighbors with trusted local providers."
+    />
+    <meta property="og:title" content="Taskquatch Showcase | Neighbors Helping Neighbors" />
+    <meta
+      property="og:description"
+      content="A public product and architecture showcase for Taskquatch, a hyperlocal services marketplace."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Taskquatch Showcase | Neighbors Helping Neighbors" />
+    <meta
+      name="twitter:description"
+      content="A public product and architecture showcase for Taskquatch, excluding production source code."
+    />
+    <meta name="twitter:image" content="assets/logo.png" />
+    <title>Taskquatch Showcase | Neighbors Helping Neighbors</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Taskquatch home">
+          <img src="assets/logo.png" alt="Taskquatch logo" />
+          <span>Taskquatch</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#trust-safety">Trust</a>
+          <a href="#operations">Operations</a>
+          <a href="#builder">Builder</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Public Product Showcase</p>
+            <h1>Neighbors Helping Neighbors</h1>
+            <p class="hero-subtitle">
+              A hyperlocal marketplace connecting neighbors with trusted local providers.
+            </p>
+            <p class="public-note">
+              This public showcase focuses on product, architecture, and outcomes while intentionally excluding
+              production source code and private implementation details.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://taskquatch.app" target="_blank" rel="noreferrer">
+                Visit taskquatch.app
+              </a>
+              <a class="button button-secondary" href="#overview">Explore the product</a>
+            </div>
+          </div>
+          <div class="hero-panel reveal" aria-label="Taskquatch product summary">
+            <div class="phone-card">
+              <div class="phone-top"></div>
+              <div class="task-card featured">
+                <span class="status-pill">Matched</span>
+                <h2>Need help assembling patio furniture?</h2>
+                <p>Post the task, review local providers, and pay securely after the job is complete.</p>
+              </div>
+              <div class="task-card compact">
+                <span>Nearby provider</span>
+                <strong>4.9 rating</strong>
+              </div>
+              <div class="task-card compact">
+                <span>Secure payment</span>
+                <strong>Stripe powered</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics section" aria-label="Taskquatch metrics">
+        <div class="container metrics-grid">
+          <article class="metric-card reveal">
+            <strong>5,000+</strong>
+            <span>Users</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>500+</strong>
+            <span>Vendors</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>100+</strong>
+            <span>Daily Active Users</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>7</strong>
+            <span>Cities</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="overview">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Product Overview</p>
+            <h2>Built around the real workflow of local services.</h2>
+            <p>
+              Taskquatch brings together task discovery, provider matching, payments, onboarding, trust systems,
+              and operational tooling in one marketplace experience.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <span class="feature-icon">01</span>
+              <h3>Task Posting</h3>
+              <p>Neighbors describe what they need, add context, and publish tasks designed for fast local response.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon">02</span>
+              <h3>Matching</h3>
+              <p>Relevant local providers can discover opportunities that fit their skills, area, and availability.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon">03</span>
+              <h3>Payments</h3>
+              <p>Marketplace payments support a clear customer and vendor flow without exposing financial complexity.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon">04</span>
+              <h3>Vendor Onboarding</h3>
+              <p>Providers can create profiles, define their services, and prepare to receive local work.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon">05</span>
+              <h3>Trust & Safety</h3>
+              <p>Reviews, reporting, moderation workflows, and provider context help build confidence in local jobs.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-icon">06</span>
+              <h3>Operations Tooling</h3>
+              <p>Internal dashboards support marketplace oversight, customer support, and operational decisions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="screenshots">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Screenshots Gallery</p>
+            <h2>Representative product surfaces.</h2>
+            <p>
+              Public-safe simulator captures and mockups are included to show product surfaces without exposing private
+              user data, operational records, or proprietary implementation details.
+            </p>
+          </div>
+          <div class="screenshot-grid">
+            <article class="screenshot-card reveal">
+              <img src="screenshots/home.svg" alt="Home screen public-safe mockup" />
+              <h3>Home</h3>
+            </article>
+            <article class="screenshot-card reveal">
+              <img class="real-screenshot" src="screenshots/create-task.png" alt="Create Task simulator screenshot" />
+              <h3>Create Task</h3>
+            </article>
+            <article class="screenshot-card reveal">
+              <img src="screenshots/tasks-tab.svg" alt="Tasks Tab public-safe mockup" />
+              <h3>Tasks Tab</h3>
+            </article>
+            <article class="screenshot-card reveal">
+              <img src="screenshots/vendor-dashboard.svg" alt="Vendor Dashboard public-safe mockup" />
+              <h3>Vendor Dashboard</h3>
+            </article>
+            <article class="screenshot-card reveal">
+              <img class="real-screenshot" src="screenshots/messaging.png" alt="Messages tab sanitized simulator screenshot" />
+              <h3>Messaging</h3>
+            </article>
+            <article class="screenshot-card reveal">
+              <img src="screenshots/admin-dashboard.svg" alt="Admin Dashboard sanitized mockup" />
+              <h3>Admin Dashboard</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="architecture">
+        <div class="container architecture-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Architecture</p>
+            <h2>Cloud-native marketplace foundation.</h2>
+            <p>
+              This simplified diagram shows the public-facing runtime shape: mobile and web clients call API
+              entry points, Lambda coordinates marketplace workflows, and AWS-managed services support data,
+              realtime updates, files, queues, and integrations.
+            </p>
+            <img class="architecture-image" src="assets/architecture.svg" alt="Simplified Taskquatch architecture diagram" />
+          </div>
+          <div class="layer-list">
+            <article class="layer-card reveal">
+              <h3>Client Experiences</h3>
+              <p>React Native powers mobile customer and vendor flows, while web surfaces support marketing and operations.</p>
+            </article>
+            <article class="layer-card reveal">
+              <h3>API Edge</h3>
+              <p>REST and WebSocket APIs route product traffic into serverless backend workflows.</p>
+            </article>
+            <article class="layer-card reveal">
+              <h3>Serverless Core</h3>
+              <p>AWS Lambda handles marketplace APIs, payments, notifications, admin operations, and scheduled workflows.</p>
+            </article>
+            <article class="layer-card reveal">
+              <h3>Data & Cache</h3>
+              <p>PostgreSQL stores marketplace records, Redis supports caching, and DynamoDB tracks realtime connection state.</p>
+            </article>
+            <article class="layer-card reveal">
+              <h3>Async Processing</h3>
+              <p>SQS queues and dead-letter queues support background jobs, notification processing, and reliability-sensitive work.</p>
+            </article>
+            <article class="layer-card reveal">
+              <h3>Storage & Delivery</h3>
+              <p>S3 and CloudFront support public web delivery, uploaded assets, and file-oriented workflows.</p>
+            </article>
+            <article class="layer-card reveal">
+              <h3>External Providers & IaC</h3>
+              <p>Stripe and other providers integrate through backend services, while Terraform provisions the AWS foundation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="trust-safety">
+        <div class="container trust-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Trust & Safety Workflow</p>
+            <h2>Identity verification supports safer marketplace participation.</h2>
+            <p>
+              Taskquatch uses a verification workflow during vendor onboarding to help protect customers, support
+              operations review, and gate access to marketplace privileges. This public view stays intentionally
+              high level and excludes provider payloads, credentials, internal routes, and review logic.
+            </p>
+          </div>
+          <div class="trust-flow reveal" aria-label="Identity verification workflow">
+            <article class="trust-step">
+              <span>01</span>
+              <h3>Vendor Onboarding</h3>
+              <p>Providers begin with profile and eligibility information.</p>
+            </article>
+            <article class="trust-step">
+              <span>02</span>
+              <h3>Secure Upload</h3>
+              <p>Required documents are collected through controlled upload flows.</p>
+            </article>
+            <article class="trust-step">
+              <span>03</span>
+              <h3>Protected Storage</h3>
+              <p>Uploaded materials are handled separately from public product content.</p>
+            </article>
+            <article class="trust-step">
+              <span>04</span>
+              <h3>Verification Provider</h3>
+              <p>Third-party checks return structured status signals to the platform.</p>
+            </article>
+            <article class="trust-step">
+              <span>05</span>
+              <h3>Operations Review</h3>
+              <p>Admin workflows support review, exceptions, and safety decisions.</p>
+            </article>
+            <article class="trust-step">
+              <span>06</span>
+              <h3>Marketplace Access</h3>
+              <p>Verification status informs provider visibility and task eligibility.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="operations">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Marketplace Operations</p>
+            <h2>Built to support the messy realities of a two-sided marketplace.</h2>
+            <p>
+              Beyond the customer app, Taskquatch includes operational workflows that help manage providers, tasks,
+              support issues, marketplace quality, payouts, and safety review without exposing internal tooling.
+              Taskquatch includes support and alerting integrations such as live support chat and Slack-based operational
+              notifications, helping shorten response times for customer issues, vendor workflows, and reliability events.
+            </p>
+          </div>
+          <div class="ops-grid">
+            <article class="ops-card reveal">
+              <h3>Vendor Approvals</h3>
+              <p>Review workflows support onboarding decisions and provider readiness before marketplace participation.</p>
+            </article>
+            <article class="ops-card reveal">
+              <h3>Task Lifecycle</h3>
+              <p>Operational views help track task creation, matching, completion, cancellation, and follow-up states.</p>
+            </article>
+            <article class="ops-card reveal">
+              <h3>Customer Support</h3>
+              <p>Support tooling helps investigate issues, respond to edge cases, and keep user interactions moving.</p>
+            </article>
+            <article class="ops-card reveal">
+              <h3>Payout Oversight</h3>
+              <p>Payment and payout visibility supports marketplace reconciliation without exposing financial internals.</p>
+            </article>
+            <article class="ops-card reveal">
+              <h3>Content Moderation</h3>
+              <p>Reporting and review flows help protect the marketplace from unsafe or low-quality activity.</p>
+            </article>
+            <article class="ops-card reveal">
+              <h3>Health Visibility</h3>
+              <p>Operational status views make it easier to monitor important workflows and diagnose incidents.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="reliability">
+        <div class="container reliability-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Reliability & Automation</p>
+            <h2>Background automation keeps marketplace workflows moving.</h2>
+            <p>
+              The platform uses asynchronous processing, scheduled jobs, health checks, and error reporting to make
+              critical flows more resilient as marketplace activity grows.
+            </p>
+          </div>
+          <div class="reliability-stack">
+            <article class="system-card reveal">
+              <span>Queue-backed workflows</span>
+              <h3>SQS + Dead-Letter Queues</h3>
+              <p>Background jobs and retry paths support notifications, task state changes, and operational workflows.</p>
+            </article>
+            <article class="system-card reveal">
+              <span>Scheduled automation</span>
+              <h3>Recurring Jobs</h3>
+              <p>Time-based processors support reminders, maintenance workflows, and marketplace housekeeping.</p>
+            </article>
+            <article class="system-card reveal">
+              <span>Production awareness</span>
+              <h3>Health & Error Reporting</h3>
+              <p>Monitoring-oriented endpoints and error reporting help surface failures before they become user-facing.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="growth">
+        <div class="container split-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Growth Systems</p>
+            <h2>Product growth was supported by dedicated acquisition and retention systems.</h2>
+            <p>
+              Taskquatch combines product-led marketplace loops with marketing infrastructure designed for local demand,
+              provider supply, and repeat engagement.
+            </p>
+          </div>
+          <div class="growth-grid">
+            <article class="growth-card reveal">
+              <h3>Referrals</h3>
+              <p>Referral flows encourage customers and providers to bring new users into the marketplace.</p>
+            </article>
+            <article class="growth-card reveal">
+              <h3>Coupons</h3>
+              <p>Promotional systems support acquisition, activation, and targeted marketplace incentives.</p>
+            </article>
+            <article class="growth-card reveal">
+              <h3>Marketing Pages</h3>
+              <p>Public landing pages and local SEO content help explain services and capture intent.</p>
+            </article>
+            <article class="growth-card reveal">
+              <h3>Lifecycle Messaging</h3>
+              <p>Email and push campaigns support onboarding, education, reminders, and re-engagement.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="payments-flow">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Payments & Payouts</p>
+            <h2>Marketplace payments require clear state, trust, and reconciliation.</h2>
+            <p>
+              The public payment view focuses on outcomes, not implementation details. Customers need confidence at
+              checkout, providers need transparent payout expectations, and operations needs visibility into exceptions.
+            </p>
+          </div>
+          <div class="payment-flow reveal" aria-label="Payments and payouts workflow">
+            <div class="payment-step">
+              <span>1</span>
+              <strong>Task Completed</strong>
+            </div>
+            <div class="payment-step">
+              <span>2</span>
+              <strong>Payment Captured</strong>
+            </div>
+            <div class="payment-step">
+              <span>3</span>
+              <strong>Platform Fee Applied</strong>
+            </div>
+            <div class="payment-step">
+              <span>4</span>
+              <strong>Vendor Payout</strong>
+            </div>
+            <div class="payment-step">
+              <span>5</span>
+              <strong>Reconciliation</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="realtime">
+        <div class="container realtime-card reveal">
+          <div>
+            <p class="eyebrow">Realtime Updates</p>
+            <h2>Task status changes can reach the app without waiting for manual refreshes.</h2>
+            <p>
+              Realtime infrastructure supports task status visibility in the mobile experience, with app-level fallback
+              behavior so core task flows remain usable even when realtime delivery is unavailable.
+            </p>
+          </div>
+          <div class="realtime-points">
+            <span>WebSocket entry point</span>
+            <span>Task status publishing</span>
+            <span>Connection state tracking</span>
+            <span>Mobile fallback path</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="admin-tooling">
+        <div class="container admin-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Admin Tooling</p>
+            <h2>Internal tooling turns marketplace operations into repeatable workflows.</h2>
+            <p>
+              The public showcase only describes broad capability areas. It does not include admin source code,
+              screenshots with private data, internal payloads, or operational identifiers.
+            </p>
+          </div>
+          <div class="admin-showcase reveal">
+            <div class="admin-mockup" aria-label="Sanitized admin dashboard mockup">
+              <div class="admin-mockup-header">
+                <span></span>
+                <strong>Operations Console</strong>
+              </div>
+              <div class="admin-metrics-row">
+                <div>
+                  <span>Open Reviews</span>
+                  <strong>12</strong>
+                </div>
+                <div>
+                  <span>Tasks Watched</span>
+                  <strong>84</strong>
+                </div>
+                <div>
+                  <span>Healthy Systems</span>
+                  <strong>99%</strong>
+                </div>
+              </div>
+              <div class="admin-workflow">
+                <div>
+                  <span>Vendor review</span>
+                  <strong>Verify profile readiness</strong>
+                </div>
+                <div>
+                  <span>Task monitoring</span>
+                  <strong>Watch lifecycle exceptions</strong>
+                </div>
+                <div>
+                  <span>Support queue</span>
+                  <strong>Resolve customer issues</strong>
+                </div>
+              </div>
+            </div>
+            <div class="admin-list">
+              <span>User support</span>
+              <span>Vendor review</span>
+              <span>Task monitoring</span>
+              <span>Content reports</span>
+              <span>Payout oversight</span>
+              <span>Health checks</span>
+              <span>Marketing operations</span>
+              <span>Data export support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="case-study">
+        <div class="container case-study reveal">
+          <p class="eyebrow">Case Study</p>
+          <h2>From idea to operated local marketplace.</h2>
+          <div class="case-grid">
+            <article>
+              <h3>Problem</h3>
+              <p>Neighbors often need small, local jobs completed quickly, while capable local providers need better access to nearby demand.</p>
+            </article>
+            <article>
+              <h3>Solution</h3>
+              <p>Taskquatch connects customers and providers through task posting, matching, messaging, payments, verification, and operations tooling.</p>
+            </article>
+            <article>
+              <h3>Outcome</h3>
+              <p>The product grew into a multi-city marketplace with thousands of users, hundreds of vendors, and daily marketplace activity.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Technical Highlights</p>
+            <h2>Pragmatic technology choices for a growing marketplace.</h2>
+          </div>
+          <div class="tech-grid">
+            <span class="tech-pill reveal">React Native</span>
+            <span class="tech-pill reveal">Node.js</span>
+            <span class="tech-pill reveal">AWS</span>
+            <span class="tech-pill reveal">Terraform</span>
+            <span class="tech-pill reveal">Stripe</span>
+            <span class="tech-pill reveal">Docker</span>
+            <span class="tech-pill reveal">PostgreSQL</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Challenges & Learnings</p>
+            <h2>Operating a marketplace means solving both software and liquidity problems.</h2>
+          </div>
+          <div class="learning-grid">
+            <article class="learning-card reveal">
+              <h3>Marketplace Cold Start</h3>
+              <p>Early growth required making each side of the marketplace useful before density was guaranteed.</p>
+            </article>
+            <article class="learning-card reveal">
+              <h3>Supply-Demand Balancing</h3>
+              <p>Provider availability, local demand, and category coverage needed ongoing operational feedback loops.</p>
+            </article>
+            <article class="learning-card reveal">
+              <h3>Reliability</h3>
+              <p>Task flows, notifications, payments, and admin actions had to remain dependable as usage increased.</p>
+            </article>
+            <article class="learning-card reveal">
+              <h3>Fast Iteration</h3>
+              <p>Product decisions were shaped by real user behavior, operational needs, and marketplace quality signals.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section builder-section" id="builder">
+        <div class="container builder-card reveal">
+          <p class="eyebrow">About the Builder</p>
+          <h2>Designed, built, and operated end-to-end by Guy Cherkesky.</h2>
+          <p>
+            This public repository is a portfolio-style showcase of the product, architecture, and outcomes behind
+            Taskquatch. It intentionally excludes production source code, secrets, credentials, and proprietary backend
+            implementation details.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>Taskquatch Showcase</span>
+        <a href="https://taskquatch.app" target="_blank" rel="noreferrer">taskquatch.app</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

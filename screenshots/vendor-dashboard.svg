@@ -1,0 +1,24 @@
+<svg width="900" height="675" viewBox="0 0 900 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Vendor Dashboard public-safe mockup</title>
+  <rect width="900" height="675" rx="32" fill="#EEF6FF"/>
+  <rect x="78" y="58" width="744" height="558" rx="36" fill="#FFFFFF" stroke="#DDE8F5"/>
+  <text x="122" y="118" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#004C58">taskquatch</text>
+  <rect x="116" y="164" width="668" height="188" rx="34" fill="#F2FBF9"/>
+  <circle cx="704" cy="224" r="72" fill="#E8EEEE"/>
+  <text x="150" y="222" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#004C58">Ready for today?</text>
+  <text x="150" y="264" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#556879">Review requests and track appointments.</text>
+  <rect x="150" y="294" width="142" height="62" rx="20" fill="#FFFFFF"/>
+  <rect x="314" y="294" width="142" height="62" rx="20" fill="#FFFFFF"/>
+  <rect x="478" y="294" width="142" height="62" rx="20" fill="#C7FAEC"/>
+  <text x="188" y="333" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#004C58">0</text>
+  <text x="352" y="333" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#004C58">1</text>
+  <text x="516" y="333" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#008B7A">$0</text>
+  <text x="122" y="418" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="900" fill="#004C58">Quick Actions</text>
+  <rect x="122" y="458" width="650" height="62" rx="24" fill="#FFFFFF" stroke="#E5ECF4"/>
+  <rect x="154" y="480" width="170" height="18" rx="9" fill="#102033"/>
+  <rect x="654" y="474" width="82" height="30" rx="15" fill="#FFFFFF" stroke="#102033"/>
+  <rect x="122" y="538" width="650" height="62" rx="24" fill="#FFFFFF" stroke="#E5ECF4"/>
+  <rect x="154" y="560" width="152" height="18" rx="9" fill="#102033"/>
+  <rect x="654" y="554" width="82" height="30" rx="15" fill="#FFFFFF" stroke="#102033"/>
+  <text x="450" y="636" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#102033">Vendor Dashboard</text>
+</svg>
