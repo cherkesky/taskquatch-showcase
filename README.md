@@ -12,8 +12,6 @@ Visit the live product: [taskquatch.app](https://taskquatch.app)
 
 This README is the primary showcase experience for GitHub visitors. It contains the full public-facing story: product overview, marketplace metrics, screenshots, architecture, trust and safety, operations, reliability, payments, growth systems, admin tooling, challenges, and builder context.
 
-The static site files in this repository mirror the same story for optional GitHub Pages publishing, but the README is designed to stand on its own.
-
 This repository is intentionally a showcase, not a source-code mirror. It does not expose production application code, private backend implementation details, secrets, credentials, customer data, vendor data, payment records, or internal operational payloads.
 
 ## Marketplace Snapshot
@@ -27,17 +25,17 @@ This repository is intentionally a showcase, not a source-code mirror. It does n
 
 The gallery uses public-safe mockups plus sanitized simulator captures. Screenshots are selected or edited to avoid exposing real user, vendor, payment, or operational data.
 
-![Home mockup](screenshots/home.svg)
+<img src="screenshots/home.svg" alt="Home mockup" width="360" />
 
-![Create Task capture](screenshots/create-task.png)
+<img src="screenshots/create-task.png" alt="Create Task capture" width="360" />
 
-![Tasks Tab mockup](screenshots/tasks-tab.svg)
+<img src="screenshots/tasks-tab.svg" alt="Tasks Tab mockup" width="360" />
 
-![Messaging sanitized capture](screenshots/messaging.png)
+<img src="screenshots/messaging.png" alt="Messaging sanitized capture" width="360" />
 
-![Vendor Dashboard mockup](screenshots/vendor-dashboard.svg)
+<img src="screenshots/vendor-dashboard.svg" alt="Vendor Dashboard mockup" width="360" />
 
-![Admin Dashboard mockup](screenshots/admin-dashboard.svg)
+<img src="screenshots/admin-dashboard.svg" alt="Admin Dashboard mockup" width="360" />
 
 ## What Taskquatch Does
 
@@ -49,6 +47,8 @@ Taskquatch brings together the major workflows needed to run a local services ma
 - **Vendor onboarding:** Providers create profiles, define services, and complete readiness steps.
 - **Trust and safety:** Reviews, reports, verification, moderation, and provider context help protect marketplace quality.
 - **Operations tooling:** Internal workflows support marketplace oversight, support, payouts, health checks, and growth operations.
+
+The core user experience is intentionally simple: a neighbor posts a task, reviews relevant local providers, communicates through the product, and pays securely after the work is complete. The provider side supports task discovery, appointments, earnings visibility, and operational readiness. Public-facing marketplace cues include provider ratings, nearby availability, fixed-price services, and Stripe-powered payments.
 
 ## Case Study
 
@@ -84,16 +84,18 @@ Identity verification is part of the vendor onboarding and marketplace safety st
 
 This public repo intentionally excludes provider payloads, exact routes, webhook details, storage paths, secret names, and proprietary review logic.
 
+The goal is to make provider onboarding safer without turning the public showcase into documentation for private review rules. At a high level, vendors provide eligibility information, upload required documents through controlled flows, verification status returns to the platform, and operations workflows support review, exceptions, and marketplace access decisions.
+
 ## Marketplace Operations
 
 Taskquatch includes operational systems for running a two-sided marketplace:
 
 - Vendor approvals and onboarding review
-- Task lifecycle visibility
+- Task lifecycle visibility across creation, matching, completion, cancellation, and follow-up states
 - Customer support workflows
 - Payout oversight and reconciliation support
 - Content moderation and reporting
-- Health/status visibility for key marketplace flows
+- Health/status visibility for key marketplace flows and incident diagnosis
 
 Taskquatch also includes support and alerting integrations such as live support chat and Slack-based operational notifications, helping shorten response times for customer issues, vendor workflows, and reliability events.
 
@@ -106,7 +108,15 @@ The platform uses background automation to keep marketplace activity moving:
 - Health checks for important API surfaces
 - Error reporting for production awareness
 - Notification processors for customer and provider communication
-- Realtime task status updates with mobile fallback behavior
+
+## Realtime Updates
+
+Task status changes can reach the mobile app without waiting for manual refreshes. The realtime layer is described publicly at a capability level only:
+
+- WebSocket entry point for realtime app traffic
+- Task status publishing from backend workflows
+- Connection state tracking for active clients
+- Mobile fallback behavior so core task flows remain usable if realtime delivery is unavailable
 
 ## Payments & Payouts
 
@@ -114,7 +124,7 @@ The public payment workflow is intentionally outcome-focused:
 
 `Task Completed -> Payment Captured -> Platform Fee Applied -> Vendor Payout -> Reconciliation`
 
-This avoids Stripe implementation details, payment identifiers, internal exceptions, and financial records.
+Customers need confidence at checkout, providers need transparent payout expectations, and operations needs visibility into exceptions. This avoids Stripe implementation details, payment identifiers, internal exceptions, and financial records.
 
 ## Growth Systems
 
@@ -138,6 +148,8 @@ The showcase references broad internal tooling categories without exposing priva
 - Health checks
 - Marketing operations
 - Data export support
+
+The sanitized admin concept in this showcase represents an operations console with aggregate marketplace views such as open reviews, watched tasks, healthy systems, vendor review, task monitoring, and support queues. It is intentionally not a real private admin screenshot.
 
 ## Technical Highlights
 
