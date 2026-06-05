@@ -1,6 +1,6 @@
 # Taskquatch Showcase
 
-![Taskquatch logo](assets/logo.png)
+<img src="assets/logo.png" alt="Taskquatch logo" width="140" />
 
 **Neighbors Helping Neighbors**
 
@@ -8,11 +8,11 @@ Taskquatch is a hyperlocal marketplace connecting neighbors with trusted local p
 
 Visit the live product: [taskquatch.app](https://taskquatch.app)
 
-## View The Complete Showcase
+## Complete Showcase
 
-- Open the full static showcase: [`index.html`](index.html)
-- Review the public-safety scope: [`docs/showcase-scope.md`](docs/showcase-scope.md)
-- If published with GitHub Pages, use this repository root as the Pages source.
+This README is the primary showcase experience for GitHub visitors. It contains the full public-facing story: product overview, marketplace metrics, screenshots, architecture, trust and safety, operations, reliability, payments, growth systems, admin tooling, challenges, and builder context.
+
+The static site files in this repository mirror the same story for optional GitHub Pages publishing, but the README is designed to stand on its own.
 
 This repository is intentionally a showcase, not a source-code mirror. It does not expose production application code, private backend implementation details, secrets, credentials, customer data, vendor data, payment records, or internal operational payloads.
 
@@ -153,6 +153,15 @@ The showcase references broad internal tooling categories without exposing priva
 - DynamoDB
 - S3 / CloudFront
 
+## Challenges & Learnings
+
+Building and operating Taskquatch required solving both product and marketplace problems:
+
+- **Marketplace cold start:** Each side of the marketplace needed enough value before density was guaranteed.
+- **Supply-demand balancing:** Provider availability, local demand, service categories, and geography required constant feedback loops.
+- **Reliability:** Task flows, notifications, payments, verification, and admin workflows needed dependable background processing.
+- **Fast iteration:** Product decisions were shaped by real user behavior, operational needs, and marketplace quality signals.
+
 ## Repository Structure
 
 ```text
@@ -168,16 +177,6 @@ taskquatch-showcase/
 │   └── favicon.ico
 └── docs/
 ```
-
-## Running Locally
-
-No build system is required. Open `index.html` directly in a browser, or serve the folder with any static file server.
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
 
 ## Public Scope
 
